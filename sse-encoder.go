@@ -73,7 +73,7 @@ func writeRetry(w stringWriter, retry uint) {
 }
 
 func writeData(w stringWriter, data interface{}) error {
-	_, _ = w.WriteString("data:")
+	_, _ = w.WriteString("data: ")
 
 	bData, ok := data.([]byte)
 	if ok {
