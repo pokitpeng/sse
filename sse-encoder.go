@@ -58,7 +58,7 @@ func writeId(w stringWriter, id string) {
 
 func writeEvent(w stringWriter, event string) {
 	if len(event) > 0 {
-		_, _ = w.WriteString("event:")
+		_, _ = w.WriteString("event: ")
 		_, _ = fieldReplacer.WriteString(w, event)
 		_, _ = w.WriteString("\n")
 	}
